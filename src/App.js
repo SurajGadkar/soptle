@@ -1,11 +1,8 @@
 import styles from "./App.module.css";
 import SearchFlights from "./components/SearchFlights/SearchFlights";
 import Flights from "./components/Flights/Flights";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import Booking from "./components/Booking/Booking";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<SearchFlights />} />
           <Route path="/search" element={<Flights />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
       </Router>
     </div>

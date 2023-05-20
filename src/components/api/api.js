@@ -202,7 +202,7 @@ export const flightRoutes = (source, destination, from, to, seats) => {
   return filteredFlights;
 };
 
-console.log(
+/*console.log(
   flightRoutes(
     "New York",
     "Los Angeles",
@@ -210,4 +210,4 @@ console.log(
     new Date("2023-06-15 17:00"),
     5
   )
-);
+);*/
