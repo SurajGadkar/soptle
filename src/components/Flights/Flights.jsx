@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Flights.module.css";
 
 import { useLocation } from "react-router-dom";
 
