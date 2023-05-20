@@ -185,3 +185,29 @@ export const flights2 = {
     },
   ],
 };
+
+export const flightRoutes = (source, destination, from, to, seats) => {
+  const filteredFlights = flights2.flights.filter((flight) => {
+    const matchingSource = source === flight.origin;
+    const matchingDestination = destination === flight.destination;
+
+    let departure = new Date(flight.departureTime);
+
+    const dateRange = departure >= from && departure <= to;
+    const seatsAvailable = flight.seats >= seats;
+
+    return matchingSource && matchingDestination && dateRange && seatsAvailable;
+  });
+
+  return filteredFlights;
+};
+
+console.log(
+  flightRoutes(
+    "New York",
+    "Los Angeles",
+    new Date("2023-05-31 17:00"),
+    new Date("2023-06-15 17:00"),
+    5
+  )
+);
