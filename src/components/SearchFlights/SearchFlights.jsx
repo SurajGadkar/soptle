@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import DatePicker from "react-date-picker";
 import "react-date-picker/dist/DatePicker.css";
-import Header from "../Header/Header";
 
 import styles from "./SearchFlights.module.css";
 

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Flights.module.css";
 
-import { flights2 } from "../api/api";
 import { useLocation } from "react-router-dom";
 
 import { flightRoutes } from "../api/api";
