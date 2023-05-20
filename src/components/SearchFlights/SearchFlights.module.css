@@ -1,0 +1,51 @@
+.mainContainer {
+  background-color: var(--color-primary);
+
+  border: 2.5px solid var(--color-white);
+  border-radius: 0.8rem;
+
+  height: 400px;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Box {
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  height: max-content;
+}
+
+.searchContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 80%;
+}
+
+.dateContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

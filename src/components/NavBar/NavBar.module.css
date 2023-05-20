@@ -1,0 +1,7 @@
+.mainContainer {
+  background-color: #05203c;
+
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
